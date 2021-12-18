@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    font: 80% "Fira Sans", sans-serif;;
+    
+}
+
+pre {
+    font-size: 1rem;
+}
+
+code {
+    font-size: 0.8rem;
+}
+
+table {
+    border-collapse: collapse;
+}
+thead {
+    background-color: linen;
+    border-bottom: 1px solid darkgray;
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid darkgray;
+}
+
+th {
+    padding: 4px;
+}
+th:not(:last-child) {
+    border-right: 1px solid darkgray;
+}
+
+td {
+    padding: 4px;
+}
+td:not(:last-child) {
+    border-right: 1px solid darkgray;
+}

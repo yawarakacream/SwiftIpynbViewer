@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/prism.min.js" data-manual></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/components/prism-python.min.js" data-manual></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="nbviewer-nbv.js"></script>
+    
+    <link rel="stylesheet" href="ipynb-style.css" />
+    <script type="text/javascript">
+        const nbv = nbv_constructor(document, {
+            katex: window.katex,
+            prism: window.Prism,
+            marked: window.marked,
+        });
+        function render(ipynbJson) {
+            const root = document.getElementById("root");
+            nbv.render(ipynbJson, root);
+            
+            const renderedParent = root.children[0];
+            renderedParent.style.margin = 0;
+            renderedParent.style.border = "none";
+            renderedParent.style.boxShadow = "none";
+        }
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
