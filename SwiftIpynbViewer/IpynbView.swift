@@ -3,6 +3,11 @@ import WebKit
 
 typealias CallbackWhenLoaded = (IpynbStatus) -> Void
 
+enum IpynbStatus {
+    case loaded
+    case failed
+}
+
 struct IpynbView: NSViewRepresentable {
     
     private let ipynbJson: String?
@@ -45,11 +50,6 @@ struct IpynbView: NSViewRepresentable {
     }
     
 }
-
-enum IpynbStatus {
-    case loaded
-    case failed
-}
     
 class IpynbCoordinator: NSObject, WKNavigationDelegate {
     
@@ -60,6 +60,7 @@ class IpynbCoordinator: NSObject, WKNavigationDelegate {
         super.init()
     }
     
+    // WKWebView の読み込みが終わってから renderIpynb する
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         parent.renderIpynb(webView)
     }

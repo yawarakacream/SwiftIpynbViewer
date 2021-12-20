@@ -12,7 +12,7 @@ struct ContentView: View {
     
     public var body: some View {
         VStack {
-            IpynbView(ipynbUrl, whenLoaded: { (status) -> Void in
+            IpynbView(ipynbUrl, whenLoaded: { status in
                 ipynbFailed = status == .failed
             })
             if ipynbFailed {
