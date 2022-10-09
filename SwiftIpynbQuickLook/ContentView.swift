@@ -23,26 +23,13 @@ struct ContentView: View {
     
     private func makeIpynbView(_ geometry: GeometryProxy) -> some View {
         let scale = min(1, geometry.size.width / ContentView.idealWidth)
+        print(geometry.size.width)
         return IpynbWrapper(ipynbUrl: ipynbUrl, ipynbFailed: $ipynbFailed)
-            .scaleEffect(scale)
             .frame(width: geometry.size.width / scale, height: geometry.size.height / scale)
+            .scaleEffect(scale)
+            .frame(width: geometry.size.width, height: geometry.size.height)
+            .background(Color.red)
     }
-    
-//    private func makeView(_ geometry: GeometryProxy) -> some View {
-//        let scale = min(1, geometry.size.width / ContentView.idealWidth)
-//        let result = VStack {
-//            IpynbView(ipynbUrl, whenLoaded: { status in
-//                ipynbFailed = status == .failed
-//            })
-//            .scaleEffect(scale)
-//            .frame(width: geometry.size.width / scale, height: geometry.size.height / scale)
-//            if ipynbFailed {
-//                Text("An error has occurred.")
-//            }
-//        }
-//        .frame(width: geometry.size.width, height: geometry.size.height)
-//        return result
-//    }
     
 }
 

@@ -73,6 +73,7 @@
 		965A97452769D2DE00E65ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		965A97462769D2DE00E65ECF /* SwiftIpynbViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftIpynbViewer.entitlements; sourceTree = "<group>"; };
 		96652D7E276A2AD50074691B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		9678627528F2B60C00B58675 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		96DD44D9276DCA12003F7B97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +129,7 @@
 		965A972D2769D2DC00E65ECF = {
 			isa = PBXGroup;
 			children = (
+				9678627528F2B60C00B58675 /* README.md */,
 				9631ABAD2769D4B000AF1FE9 /* Resource */,
 				965A97382769D2DC00E65ECF /* SwiftIpynbViewer */,
 				963D716A276DBC7B00AC5B09 /* SwiftIpynbQuickLook */,
